@@ -1,0 +1,247 @@
+<!DOCTYPE html/>
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="dcterms.created" content="Fri, 27 May 2016 21:45:53 GMT">
+    <title>Dating Web Assignment</title>
+    <meta name="author" content="Jasmine Marie Bouges">    
+    
+        
+    <style type="text/css">
+
+	fieldset { 
+		background: lightyellow; 
+		border: 10px solid yellow;
+		margin-bottom: 10px;
+		width: 720px;
+	}
+
+	label { 
+		width: 180px;
+		display: inline-block;
+		vertical-align: text-top;
+		text-align: right;
+	}
+
+	textarea { 
+		width: 360px;
+		height: 50px;
+	}
+
+	label input[type="checkbox"] {
+		width: auto;
+	}
+
+	label input[type="radio"] {
+		width: auto;
+	}
+
+	preview {
+		display: inline-block;
+		vertical-align: text-top;
+		text-align: right;
+		margin-left: 78px;
+	}
+	
+	#preview {
+		width: 300px;
+	}
+
+	.maroon1 {
+		text-align: center;
+		padding: 1px 13px 1px 13px;
+		color: white;
+		background: maroon;
+		position: relative; top: -5px;
+	}
+
+	.purple1 {
+		text-align: center;
+		padding: 1px 13px 1px 13px;
+		color: white;
+		background: purple;
+		position: relative; top: -5px;
+	}
+
+	.maroon2 {
+		text-align: center;
+		padding: 1px 15.9px 1px 15.9px;
+		color: white;
+		background: maroon;
+		position: relative; top: -5px;
+	}
+
+	.purple2 {
+		text-align: center;
+		padding: 1px 10.5px 1px 10.5px;
+		color: white;
+		background: purple;
+		position: relative; top: -5px;
+	}
+
+	.level {
+		position: relative; top: -5px;
+	}
+
+	label:hover {
+		font-size: 25px;
+	}
+
+	input:hover {
+		height: 27px;
+		font-size: 25px;
+	}
+
+	textarea:hover {
+		height: 70px;
+	}
+
+	select:hover {
+		height: 30px;
+	}
+
+	select:hover {
+		font-size: 25px;
+	}
+
+	.buttons:hover {
+		font-size: 25px;
+	}
+
+    </style>
+    <!--[if IE]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+ 
+<body>
+
+<h1>Please Enter Your Details For Our Dating Website!</h1>
+
+
+<form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="post">
+<div id="your-face">
+  <fieldset>
+    <legend>Your Face</legend>
+	<label for="face">Your Image:</label>
+	<input type="file" name="face" required>
+	<br>
+	
+	<label for="preview">Image Preview:</label>
+	<img id="preview">
+  </fieldset>
+ </div>
+ 
+
+<div id="your-general-details">
+  <fieldset>
+    <legend>Your General Details</legend>
+
+	
+	<label for="name">Name:</label>
+	<input type="text" name="name" placeholder="Your name here" required></input>
+	<br>
+	
+
+   	
+	<label for="gender" class="radio">Gender:</label>
+	<input type="radio" name="gender" value="male" required><span class="buttons">Male</span></input>
+	<input type="radio" name="gender" value="female" required><span class="buttons">Female</span></input>
+	<br>
+	
+	
+    
+	<label for="age">Age:</label>
+	<input type="number" min="18" max="150" name="age" value="18" required></input>
+	<br>
+	
+	
+   	
+	<label for="birthday">Date of birth:</label>
+	<input type="date" name="birthday" required></input>
+	<br>
+	
+	
+    
+	<label for="favorite-color">Favorite color:</label>
+	<input type="color" name="favorite-color" required></input>
+	<br>
+	
+	
+    
+	<label for="country">What country:</label>
+	<select name="country">
+	<option value="none" required></option>
+	<option value="USA" required>United States of America</option>
+	<option value="Poland" required>Poland</option>
+	<option value="Korea" required>Korea</option>
+	<option value="Peru" required>Peru</option>
+	<option value="Iceland" required>Iceland</option>
+	</select>
+	<br>
+	
+
+  </fieldset>
+ </div>
+ 
+
+<div id="your-indicators">
+  <fieldset>
+    <legend>Your Indicators</legend>
+
+	
+	<label for="height" class="level">Height:</label>
+	<span class="maroon1">Short</span><input type="range" min="0" max="100" name="height" required></input><span class="purple1">Tall</span>
+	<br>
+	
+	   
+	
+	<label for="salary" class="level">Salary:</label>
+	<span class="maroon2">Poor</span><input type="range" min="0" max="100" name="salary" required></input><span class="purple2">Rich</span>
+	<br>
+	
+
+  </fieldset>
+ </div>
+ 
+<div id="your-contact-information">
+  <fieldset>
+    <legend>Your Contact Information</legend>
+
+    
+	<label for="email">Email:</label>
+	<input type="email" name="email" required></input>
+	<br>
+	
+	
+    
+	<label for="mobile">Mobile:</label>
+	<input type="tel" name="mobile" required></input>
+	<br>
+	
+	
+    
+	<label for="address">Address:</label>
+	<textarea name="address" required></textarea>
+	<br>
+	
+    
+	
+	<label for="contact" class="checkbox">Method to contact you:</label>
+	<input type="checkbox" name="contact" value="email" required><span class="buttons">Email</span></input>
+	<input type="checkbox" name="contact" value="whatsapp" required><span class="buttons">Whatsapp</span></input>
+	<input type="checkbox" name="contact" value="in-app" required><span class="buttons">In-app chat</span></input>
+	<br>
+	
+
+  </fieldset>
+ </div>
+ 
+ 
+	<input type="submit" value="Submit"></input>
+ 
+ </form>
+ <script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+  </body>  
+</html>
